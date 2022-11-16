@@ -24,7 +24,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
 
         gameLoop = new GameLoop(this, surfaceHolder);
 
-        joystick = new Joystick(175, 850, 70, 40);
+        joystick = new Joystick(250, 800, 70, 40);
         player = new Player(getContext(), 2*500, 500, 30);
 
         setFocusable(true);
@@ -37,7 +37,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
                 if(joystick.isPressed((double) event.getX(), (double) event.getY())){
                     joystick.setIsPressed(true);
                 }
-                player.getPosition((double) event.getX(), (double) event.getY());
+                //player.getPosition((double) event.getX(), (double) event.getY());
                 return true;
             case MotionEvent.ACTION_MOVE:
                 if(joystick.getIsPressed()){
