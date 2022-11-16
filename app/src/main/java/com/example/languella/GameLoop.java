@@ -72,7 +72,6 @@ public class GameLoop extends  Thread{
                 }
             }
 
-
             elapsedTime = System.currentTimeMillis() -startTime;
             sleepTime = (long)(updateCount*UPS_PERIOD - elapsedTime);
             if(sleepTime > 0 ){
