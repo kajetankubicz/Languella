@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/background"
+    tools:context=".Activities.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="LANGUELLA  "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#CF7C00"
+        android:textSize="60sp"
+        android:textStyle="bold|italic" />
+
+
+    <Button
+        android:id="@+id/buttonQuitInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="510dp"
+        android:layout_marginTop="-60dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Quit to main menu "
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:textStyle="bold|italic"
+        android:background="@drawable/custom_button"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="780dp"
+        android:layout_height="546dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="100dp"
+        android:text="INSTRUKCJA\n\n1. W grze numer 1 znajdź odpowiednik słowa, które znajdzie się powyżej bohatera po rozpoczęciu gry\n2. Bohater musi wejść na pole ze słowem żeby przekonać się czy jest poprawne\n3. W przypadku gdy będzie niepoprawne to bohater straci jedno z żyć (startowo 3)\n4.W przypadku gdy słowo będzie poprawne bohater zdobywa punkt i gra automatycznie przechodzi do następnego poziomu\n5.Nie wychodź poza obszar gry, gdyż wtedy automatycznie przegrywasz i zostajesz przeniesiony do menu głównego\n6. W grze numer 2 pod wynikiem w lewym górym rogu pojawi się słowo, na którego odpowiednik musisz naskoczyć. Uważaj ponieważ gdy trafisz na kulkę to tracisz życie"
+        android:textAlignment="textStart"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAllCaps="true"
+        android:textColor="#CF7C00"
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:visibility="visible" />
+
+
+</RelativeLayout>
